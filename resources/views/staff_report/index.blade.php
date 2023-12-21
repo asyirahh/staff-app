@@ -107,7 +107,7 @@
 
             var datasets = designers.map(function(designer, index) {
                 return {
-                    label: designer,
+                    label: 'Design {{ request('month') }} - ' + designer,
                     data: [orders[index]],
                     backgroundColor: colors[index],
                     hoverBackgroundColor: '#fff',
